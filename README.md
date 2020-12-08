@@ -8,7 +8,7 @@ Project developed with ReactJS and The Movie DB API
   <img src="/readme-assets/Screenshot_2.png" width="600"/>
 </h1>
 <h1 align="center" >  
-  <img src="/readme-assets/Screenshot_3.png" width="600"/>
+  <img src="/readme-assets/Screenshot_3.png" width="300"/>
 </h1>
 
 <p align="center">
