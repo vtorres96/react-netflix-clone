@@ -1,4 +1,4 @@
-# Rocketshoes
+# Netflix
 Project developed with ReactJS and The Movie DB API
 
 <h1 align="center">
