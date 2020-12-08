@@ -1,10 +1,6 @@
 # Rocketshoes
 Project developed with ReactJS and The Movie DB API
 
-<h1 align="center">
-Netflix
-</h1>
-
 <h1 align="center" >  
   <img src="/readme-assets/Screenshot_1.png" width="600"/>
 </h1>
@@ -33,7 +29,7 @@ Netflix
 
 - [x] React
 - [x] Styled Components
-- [x] The Movie DB Api
+- [x] The Movie DB API
 
 ## Starting Dev Environment
 1. Access https://www.themoviedb.org and create your API KEY.<br/>
