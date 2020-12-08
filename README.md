@@ -1,8 +1,6 @@
-# Netflix
-Project developed with ReactJS and The Movie DB API
-
 <h1 align="center">
-Netflix
+Netflix <br/>
+Project developed with ReactJS and The Movie DB API
 </h1>
 
 <h1 align="center" >  
