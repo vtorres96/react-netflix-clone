@@ -1,7 +1,8 @@
 <h1 align="center">
-Netflix <br/>
-Project developed with ReactJS and The Movie DB API
+Netflix
 </h1>
+
+<p>Project developed with ReactJS and The Movie DB API</p>
 
 <h1 align="center" >  
   <img src="/readme-assets/Screenshot_1.png" width="600"/>
