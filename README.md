@@ -35,4 +35,4 @@ Project developed with ReactJS and The Movie DB API
 1. Access https://www.themoviedb.org and create your API KEY.<br/>
 2. Add your API KEY in file `Tmdb.js`.<br/>
 2. Run `npm install` or `yarn install`.<br/>
-4. Run `yarn start`.<br/>
+4. Run `npm install` or `yarn start`.<br/>
