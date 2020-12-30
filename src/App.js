@@ -2,7 +2,9 @@ import React, { useEffect, useState } from 'react';
 import Tmdb from './Tmdb';
 import Header from './components/Header';
 import FeaturedMovie from './components/FeaturedMovie';
-import MovieRow from './components/MovieRow';
+import MovieList from './components/MovieList';
+import Footer from './components/Footer';
+import Loading from './components/Loading';
 
 import GlobalStyles from './styles/GlobalStyles';
 
@@ -18,7 +20,7 @@ const App = () => {
       setMovieList(list)
 
       // get the featured
-      let originals = list.filter(item => item.slug == 'originals');
+      let originals = list.filter(item => item.slug === 'originals');
       let randomChoosen = Math.floor(Math.random() * (originals[0].items.data.results.length - 1));
       let choosen = originals[0].items.data.results[randomChoosen];
       let choosenInfo = await Tmdb.getMovieInfo(choosen.id, 'tv');
@@ -51,22 +53,12 @@ const App = () => {
         <FeaturedMovie item={featuredData}/>
       }
 
-      <section className="lists">
-        {movieList.map((item, key) => (
-          <MovieRow key={key}  title={item.title} items={item.items}/>
-        ))}
-      </section>
+      <MovieList list={movieList} />
       
-      <footer>
-        Desenvolvido por Vtorres96 <br/>
-        Todos os direitos das imagens são da Netflix <br/>
-        Dados Extraidos de https://www.themoviedb.org/ <br/>
-      </footer>
+      <Footer /> 
      
       {movieList.length <= 0 &&
-        <div className="loading">
-          <img src="https://cdn.lowgif.com/small/0534e2a412eeb281-the-counterintuitive-tech-behind-netflix-s-worldwide.gif" alt="loading"></img>
-        </div>
+        <Loading />
       }
       
       <GlobalStyles />
