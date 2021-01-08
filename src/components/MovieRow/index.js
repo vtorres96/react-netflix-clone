@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 
 import { 
   Container,
+  LeftIcon,
+  RightIcon,
   ListArea, 
   List,
-  Item
+  Item,
+  Image
 } from './styles';
 import { NavigateBefore, NavigateNext } from "@material-ui/icons";
 
@@ -33,18 +36,18 @@ const MovieRow = ({title, items}) => {
     <Container>
       <h2>{title}</h2>
 
-      <div className="left-icon" onClick={handleLeftArrow}>
+      <LeftIcon onClick={handleLeftArrow}>
           <NavigateBefore style={{fontSize:50}} />
-      </div>
-      <div className="right-icon" onClick={handleRightArrow}>
+      </LeftIcon>
+      <RightIcon onClick={handleRightArrow}>
           <NavigateNext style={{fontSize:50}} />
-      </div>
+      </RightIcon>
 
       <ListArea>
         <List style={{marginLeft: scrollX, width: items.data.results.length * 150}}>
           {items.data.results.length > 0 && items.data.results.map((item, key)=>(
             <Item key={key}>    
-                <img  src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
+                <Image src={`https://image.tmdb.org/t/p/w300${item.poster_path}`} alt={item.original_title} />
             </Item>
           ))}
         </List>
