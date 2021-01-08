@@ -26,39 +26,14 @@ export const HorizontalArea = styled.div`
   padding-left: 30px;
   padding-bottom: 150px;
   padding-top: 50px;
+`;
 
-  > div.name {
-    font-size: 60px;
-    font-weight: bold;
-  }
-
-  > div.description {
-    margin-top:15px;
-    font-size: 20px;
-    color: #999;
-    max-width: 40%;
-  }
-
-  > div.genres {
-    margin-top: 15px;
-    font-size: 18px;
-    color: #999;
-  }
+export const Name = styled.div`
+  font-size: 60px;
+  font-weight: bold;
 
   @media (max-width: 760px){
-    div.name {
-      font-size: 40px;
-    }
-
-    div.description {
-      font-size: 14px;
-      max-width: 100%;
-      margin-right: 30px;
-    }
-
-    div.genres {
-      font-size: 14px;
-    }
+    font-size: 40px;
   }
 `;
 
@@ -68,17 +43,36 @@ export const Infos = styled.div`
   font-weight: bold;
   margin-top: 15px;
 
-  > div.points, div.year, div.seasons {
-    display: inline-block;
-    margin-right: 15px;
-  }
-
-  > div.points {
-    color: #46d369
-  }
-
   @media (max-width: 760px){
     font-size: 16px;
+  }
+`;
+
+export const Points = styled.div`
+  display: inline-block;
+  margin-right: 15px;
+  color: #46d369;
+`;
+
+const d_block_mr_15 = `
+  display: inline-block;
+  margin-right: 15px;
+`;
+
+export const Year = styled.div(d_block_mr_15);
+
+export const Seasons = styled.div(d_block_mr_15);
+
+export const Description = styled.div`
+  margin-top:15px;
+  font-size: 20px;
+  color: #999;
+  max-width: 40%;
+
+  @media (max-width: 760px){
+    font-size: 14px;
+    max-width: 100%;
+    margin-right: 30px;
   }
 `;
 
@@ -114,5 +108,15 @@ export const ButtonsArea = styled.div`
     .watch-button, .my-list-button {
       font-size: 16px;
     }
+  }
+`;
+
+export const Genres = styled.div`
+  margin-top: 15px;
+  font-size: 18px;
+  color: #999;
+
+  @media (max-width: 760px){
+    font-size: 14px;
   }
 `;
