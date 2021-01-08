@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, Logo, UserAvatar } from './styles';
+import { Container, Logo, ImageLogo, UserAvatar, ImageAvatar } from './styles';
 import logo from '../../assets/logo.png';
 import userAvatar from '../../assets/user-avatar.png';
 
@@ -9,12 +9,12 @@ const Header = ({black}) => {
     <Container className={black ? 'black' : ''}>
       <Logo>
         <a href="/">
-          <img src={logo} alt=""/>
+          <ImageLogo src={logo} alt=""/>
         </a>
       </Logo>
       <UserAvatar>
         <a href="/">
-          <img src={userAvatar} alt=""/>
+          <ImageAvatar src={userAvatar} alt=""/>
         </a>
       </UserAvatar>
     </Container>
